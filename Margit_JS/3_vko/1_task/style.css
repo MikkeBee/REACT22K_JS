@@ -1,0 +1,48 @@
+* {
+  margin: 5px;
+  padding: 5px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  background-image: linear-gradient(to top, red, yellow, blue);
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin: 2px 0;
+}
+
+input {
+  width: 180px;
+  margin: 3px;
+  margin-right: 120px;
+}
+
+button {
+  border: none;
+  background-color: #d6f77e;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.goodtoGo {
+  color: green;
+}
+
+.warning {
+  color: orange;
+}
+
+.dangerDanger {
+  color: red;
+}
+
+.test {
+  color: blue;
+  font-size: large;
+}

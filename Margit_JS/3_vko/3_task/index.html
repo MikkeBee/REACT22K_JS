@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Color Generator</h1>
+    <form>
+      <div class="colors">
+        <h2>Colors</h2>
+        <input name="color1" type="color" id="color1" value="#eaec76" />
+        <input name="color2" type="color" id="color2" value="#00f7ff" />
+      </div>
+      <h2>Direction</h2>
+      <div class="radios">
+        <label for="bottom">To bottom</label>
+        <input
+          type="radio"
+          id="bottom1"
+          value="to bottom"
+          name="direction"
+          checked
+        />
+
+        <label for="top">To top</label>
+        <input type="radio" id="top1" value="to top" name="direction" />
+
+        <label for="left">To left</label>
+        <input type="radio" id="left1" value="to left" name="direction" />
+
+        <label for="right">To right</label>
+        <input type="radio" id="right1" value="to right" name="direction" />
+      </div>
+    </form>
+    <div id="button">
+      <button onclick="calculate()" id="getCSS">Get CSS</button>
+    </div>
+    <div id="spaceforCode"><p id="answerSpace"></p></div>
+    <script src="main.js"></script>
+  </body>
+</html>

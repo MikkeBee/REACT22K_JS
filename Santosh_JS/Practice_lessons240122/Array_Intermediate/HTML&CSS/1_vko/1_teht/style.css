@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(53, 81, 238);
+}
+
+#my_id {
+  color: whitesmoke;
+}
+
+.my_class {
+  color: yellow;
+}
+
+.my_otherclass {
+  color: white;
+  font-size: 42px;
+}
+
+.my_thirdclass {
+  color: transparent;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* this is my first style sheet */

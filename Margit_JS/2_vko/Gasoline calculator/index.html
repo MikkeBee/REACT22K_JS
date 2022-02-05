@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gasoline price calculator</title>
+  </head>
+  <body>
+    <h2>Gasoline price calculator</h2>
+    <div>
+      <p>
+        Do you want to know how much gasoline you can buy with the money you
+        have? Enter the values below.
+      </p>
+    </div>
+    <div>
+      <label for="gasprice">Price:</label>
+      <input type="number" id="gasprice" />
+    </div>
+    <div>
+      <label for="cashmoney">Money:</label
+      ><input type="number" id="cashmoney" />
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <p id="answerSpace"></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
