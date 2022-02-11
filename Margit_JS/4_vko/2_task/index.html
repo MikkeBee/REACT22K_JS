@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car Database</title>
+  </head>
+  <body>
+    <header class="container">
+      <form class="searchData">
+        <div class="form_group">
+          <h2>Search by license number</h2>
+          <label for="search">Search for license number</label>
+          <input type="text" class="search" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+    </header>
+    <main>
+      <section class="carInformation">
+        <h2 class="insertCar">Insert car data</h2>
+        <form class="inputData">
+          <div class="form_group">
+            <label for="licenseNumber">License number</label>
+            <input type="text" class="licenseNumber" />
+          </div>
+          <div class="form_group">
+            <label for="carMaker">Car maker</label>
+            <input type="text" class="carMaker" />
+          </div>
+          <div class="form_group">
+            <label for="carModel">Car model</label>
+            <input type="text" class="carModel" />
+          </div>
+          <div class="form_group">
+            <label for="carOwner">Car owner</label>
+            <input type="text" class="carOwner" />
+          </div>
+          <div class="form_group">
+            <label for="carPrice">Car price</label>
+            <input type="number" class="carPrice" />
+          </div>
+          <div class="form_group">
+            <label for="carColor">Car color</label>
+            <input type="text" class="carColor" />
+          </div>
+          <input type="submit" value="Add car" />
+          <input type="reset" />
+        </form>
+      </section>
+      <section class="outputContainer">
+        <h2 class="carData">Car database</h2>
+        <div class="result"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
