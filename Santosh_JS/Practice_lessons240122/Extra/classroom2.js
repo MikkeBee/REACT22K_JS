@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 Task 1;
@@ -47,3 +47,72 @@ Task 7:
 let furniture = ['Table', 'Chairs','Couch'];
 For each item in this array console.log the letters in each item
 **/
+
+let myAlphabet = ["A", "B", "C", "D", "E", "F", "G"];
+
+// const myAlphabetLength = () => {
+//   if (myAlphabet.length < 5) {
+//     return true;
+//   }
+//   return myAlphabet.length;
+// };
+
+// console.log(myAlphabetLength());
+
+// const planets = ["Venus", "Mars", "Saturn", "Jupiter", "Neptune"];
+
+// const solar = () => {
+//   planets.forEach(function (planet) {
+//     console.log(planet);
+//     console.log(planets);
+//   });
+// };
+
+// solar();
+
+// const wowDatatypes = [false, 42, "wow", "Hello World", 666];
+
+// const dataTypes = () => {
+//   wowDatatypes.forEach(function (dataType) {
+//     console.log(dataType);
+//     console.log(typeof dataType);
+//     console.log(wowDatatypes.indexOf(dataType));
+//   });
+// };
+
+// dataTypes();
+
+// let student1Courses = ["Math", "English", "JSProgramming"];
+// let student2Courses = ["Geography", "Spanish", "JSProgramming"];
+
+// const courses = () => {
+//   let course = student1Courses.filter((element) =>
+//     student2Courses.includes(element)
+//   );
+//   return course;
+// };
+
+// console.log(courses());
+
+// let myArr = [1, 2, "One", true];
+
+// const theArr = (myArr) => {
+//   myArr.forEach(function (item) {
+//     console.log(item);
+//   });
+// };
+
+// theArr(myArr);
+
+let furniture = ["Table", "Chairs", "Couch"];
+
+const mobler = () => {
+  furniture.forEach(function (meubles) {
+    meubles.toString();
+    for (let i = 0; i < meubles.length; i++) {
+      console.log(meubles.charAt(i));
+    }
+  });
+};
+
+mobler();

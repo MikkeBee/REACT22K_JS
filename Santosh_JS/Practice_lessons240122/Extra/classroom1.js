@@ -24,7 +24,7 @@ let people = ["Sergei", "Mariia", "Boris", "Abel"];
  * @param {people[]} strings
  */
 
-const people = ["Sergei", "Mariia", "Boris", "Abel"];
+// const people = ["Sergei", "Mariia", "Boris", "Abel"];
 
 // const peepsList = (people) => {
 //   let i = 0;
@@ -36,6 +36,14 @@ const people = ["Sergei", "Mariia", "Boris", "Abel"];
 
 // peepsList(people);
 
+// const allPeople = (people) => {
+//   people.forEach(function (person) {
+//     console.log(person);
+//   });
+// };
+
+// allPeople(people);
+
 // function removePeople(name) {
 //   return people.filter(function (people) {
 //     return name !== people;
@@ -44,5 +52,32 @@ const people = ["Sergei", "Mariia", "Boris", "Abel"];
 // console.log(removePeople("Sergei"));
 // console.log(removePeople("Abel"));
 
-console.log(people.push("Mahalete"));
-console.log(people);
+// console.log(people.push("Mahalete"));
+// console.log(people);
+
+// const newPeople = (people) => {
+//   let newPeeps = people.slice(2);
+//   return newPeeps;
+// };
+
+// console.log(newPeople(people));
+
+// console.log(people.indexOf("Mariia"));
+// console.log(people.indexOf("Foo"));
+
+const people = ["Sergei", "Mariia", "Boris", "Abel"];
+
+const bob = ["Bob"];
+// const newList = (people) => {
+//   people.splice(2, 1, "Rakhi", "Yulia");
+//   return people;
+// };
+
+// console.log(newList(people));
+
+const withBob = () => {
+  let robert = people.concat(bob);
+  return robert;
+};
+
+console.log(withBob());
