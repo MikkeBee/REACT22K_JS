@@ -1,3 +1,5 @@
+// Complete the getSelectedCurrencies function such that it returns an array of the currencies. So, in the example above, it should return[EUR, USD].
+
 const getSelectedCurrencies = () => {
   const moneyMoney = document.querySelectorAll(".card.active");
   return [...moneyMoney].map((card) => card.textContent);
