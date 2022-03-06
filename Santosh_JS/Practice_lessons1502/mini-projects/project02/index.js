@@ -1,45 +1,44 @@
 /* Sample usage do not modify */
+
 class FetchWrapper {
-    constructor(baseURL) {
-        this.baseURL = baseURL;
-    }
+  constructor(baseURL) {
+    this.baseURL = baseURL;
+  }
 
-    get(endpoint) {
-        return fetch(this.baseURL + endpoint)
-            .then(response => response.json());
-    }
+  get(endpoint) {
+    return fetch(this.baseURL + endpoint).then((response) => response.json());
+  }
 
-    put(endpoint, body) {
-        return this._send("put", endpoint, body);
-    }
+  put(endpoint, body) {
+    return this._send("put", endpoint, body);
+  }
 
-    post(endpoint, body) {
-        return this._send("post", endpoint, body);
-    }
+  post(endpoint, body) {
+    return this._send("post", endpoint, body);
+  }
 
-    delete(endpoint, body) {
-        return this._send("delete", endpoint, body);
-    }
+  delete(endpoint, body) {
+    return this._send("delete", endpoint, body);
+  }
 
-    _send(method, endpoint, body) {
-        return fetch(this.baseURL + endpoint, {
-            method,
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(body)
-        }).then(response => response.json());
-    }
+  _send(method, endpoint, body) {
+    return fetch(this.baseURL + endpoint, {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    }).then((response) => response.json());
+  }
 }
 
-const startLoader = element => {
-    element.innerHTML = `<div class="loading-spinner"></div>`;
-}
+const startLoader = (element) => {
+  element.innerHTML = `<div class="loading-spinner"></div>`;
+};
 
 const stopLoader = (element, value) => {
-    element.textContent = value;
-}
-
+  element.textContent = value;
+};
 
 /* In this mini-project, you will build a page that uses the GitHub API to list the repositories of a GitHub user.
 This project does not require you to log in and authenticate with the GitHub API.
@@ -52,3 +51,24 @@ kalwar or yourgithubusername), and then when the user submits the form,
 the app will show the list of GitHub repositories for that user using the GitHub API. */
 
 /* Write your code here... */
+
+const userName = document.querySelector("#github-username");
+const button = document.querySelector("#get-repos");
+const repoList = document.querySelector("#repos-list");
+
+const getRepos = () => {
+  const API = new FetchWrapper("https://api.github.com/users/");
+
+  API.get(`${userName.value}/repos`)
+    .then((data) => {
+      data.forEach((element) => {
+        repoList.insertAdjacentHTML("beforeend", `<li>${element.name}</li>`);
+      });
+    })
+    .catch((error) => console.error(error));
+};
+
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  getRepos();
+});
