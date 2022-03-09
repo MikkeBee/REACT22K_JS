@@ -67,7 +67,7 @@ ul li {
 .listSection {
   height: 100vh;
   background-color: aqua;
-  background-image: url("images/notepadbackground.jpeg");
+  background-image: url("images/paperback2.jpeg");
   width: 100%;
   background-position: fixed;
   background-size: 100% auto;
@@ -95,4 +95,28 @@ ul li {
 
 .listItems i {
   padding-right: 0.5rem;
+}
+
+.listItem button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-left: 2rem;
+  height: 2rem;
+  width: 7rem;
+  font-family: "Comfortaa", cursive;
+  color: aliceblue;
+  background-color: darkslategrey;
+  display: none;
+}
+
+.listItem:hover button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-left: 2rem;
+  height: 2rem;
+  width: 7rem;
+  font-family: "Comfortaa", cursive;
+  color: aliceblue;
+  background-color: darkslategrey;
+  display: block;
 }
