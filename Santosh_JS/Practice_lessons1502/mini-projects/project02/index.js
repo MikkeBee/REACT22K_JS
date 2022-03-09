@@ -69,6 +69,7 @@ const getRepos = () => {
 };
 
 button.addEventListener("click", (e) => {
+  repoList.value = "";
   e.preventDefault();
   getRepos();
 });
