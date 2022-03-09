@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
 
@@ -10,6 +10,7 @@ This willItRain function receives a JSON string from a fictive weather API.
  * @param {string} weatherApiResponse
  */
 const willItRain = (weatherApiResponse) => {
+  if 
   // write it here
 };
 
