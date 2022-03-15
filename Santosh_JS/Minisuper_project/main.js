@@ -24,5 +24,25 @@ const addItem = () => {
 //    this.closest(".listItem").remove();
 //  };
 
+// Jennan versio käyttämällä createElement jne
+// const textbox = document.querySelector(".textbox");
+// const button = document.querySelector(".button");
+// const list = document.querySelector(".list");
+// const empty = document.querySelector(".empty");
+// const addToList = () => {
+//   const shoppingList = list.insertAdjacentHTML(
+//     "beforeend",
+//     `<li>${textbox.value}</li>`
+//   );
+//   return (textbox.value = "");
+// };
+//
+// const addToList = () => {
+//   const newList = document.createElement("li");
+//   const newContent = document.createTextNode(textbox.value);
+//   newList.appendChild(newContent);
+//   document.body.insertBefore(newList, list);
+// };
+
 button.addEventListener("click", addItem);
 button.addEventListener("keyup", addItem);
