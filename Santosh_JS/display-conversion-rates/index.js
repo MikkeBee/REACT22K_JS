@@ -58,16 +58,6 @@ fetch/FetchWrapper related code after you get it to work the first time. */
 // Whenever the user choose a new value for the base currency, you need to call the getConversionRates function.
 // Test it out in the browser tab.
 
-// const fetchData = () => {
-//   fetch(
-//     "https://v6.exchangerate-api.com/v6/0083730c7fa26c9ed009e8ec/latest/USD"
-//   )
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log("fetch result", data);
-//     });
-// };
-
 const API = new FetchWrapper(
   "https://v6.exchangerate-api.com/v6/0083730c7fa26c9ed009e8ec/pair/"
 );
